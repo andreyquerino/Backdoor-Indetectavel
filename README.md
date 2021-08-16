@@ -31,12 +31,14 @@ void Run() {
 https://user-images.githubusercontent.com/88719652/129621046-196b336d-e839-473c-8691-9380c64cf998.mp4
 
 ### Persistência
-Como bônus tive liberdade criar um registro de persistência no windows onde toda vez que iniciar o sistema abra o executável.<br />
+Como bônus tive liberdade criar um registro de persistência no windows onde toda vez que iniciar o sistema abra o executável.
+<br />
 ![persistencia](https://user-images.githubusercontent.com/88719652/129620696-eac13434-65d5-407f-8987-7b69fdc930f2.png)
 
 
 ### Virus Total 
 Até a data desta postam, não teve detecção no virus total.
-https://www.virustotal.com/gui/file/8ff653ded39076b02dea1ab8ec367afc16d2b8e8e5f6c7e92b1a8572f2147748/detection <br />
+https://www.virustotal.com/gui/file/8ff653ded39076b02dea1ab8ec367afc16d2b8e8e5f6c7e92b1a8572f2147748/detection 
+<br />
 ![virus-total](https://user-images.githubusercontent.com/88719652/129620707-6fe47fc6-3df1-44e9-aea7-15f0c8aa3494.png)
 
