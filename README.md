@@ -2,7 +2,7 @@
 A função do backdoor é fazer download de um executável via powershell direto na pasta e temp, em seguida executar o arquivo, tudo usando uma função onde a janela do console fica no modo em que não seja visível para o usuário. Esse método é comum em criadores de malware, onde muitos usam métodos mais complexos para evitar a detecção, como programar um arquivo onde ele fica dormindo até alguém pressionar uma tecla, ou até atingir um certo tempo, etc..  
 
 ### Criptografia Xor
-A matemática da criptografia xor que fiz foi bem simples, onde a chave da criptação é o tamanho da string vezes 2 divido por 100, fazendo com que a chave seja a própia string deseja.
+A matemática da criptografia xor que fiz foi bem simples, onde a chave da criptação é o tamanho da string vezes 2 divido por 100, fazendo com que a chave seja a própia string desejada, se quiser saber mais sobre criptografica xor ![clica aqui](https://github.com/andreyquerino/CriptografiaXor).
 ```c++
 void Decrypter(char CriptXor[]) {  
     int QuantidadeString = strlen(CriptXor); // Determina o tamanho da string.
