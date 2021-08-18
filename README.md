@@ -41,7 +41,6 @@ Como bônus tive a liberdade de criar um registro de persistência no windows on
 
 ### Virus Total 
 Até a data desta postam, não teve detecção no virus total.
-https://www.virustotal.com/gui/file/8ff653ded39076b02dea1ab8ec367afc16d2b8e8e5f6c7e92b1a8572f2147748/detection 
 
 ![virus-total](https://user-images.githubusercontent.com/88719652/129620707-6fe47fc6-3df1-44e9-aea7-15f0c8aa3494.png)
 
