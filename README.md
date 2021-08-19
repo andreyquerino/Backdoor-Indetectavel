@@ -40,7 +40,7 @@ Como bônus tive a liberdade de criar um registro de persistência no windows on
 
 
 ### Virus Total 
-Até a data desta postam, não teve nenhuma detecção no virus total.
+Até a data desta postagem, não teve nenhuma detecção no virus total.
 
 ![virus-total](https://user-images.githubusercontent.com/88719652/129620707-6fe47fc6-3df1-44e9-aea7-15f0c8aa3494.png)
 
