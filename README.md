@@ -4,7 +4,7 @@ A função do backdoor é fazer download de um executável via powershell direto
 ### Criptografia Xor
 Para explicar resumidamente, ele cria um array Decrypter de nosso array char e faz o xors de volta usando a chave para converter o valor criptografado para o valor original e os armazena no array de dados descriptografado que criamos anteriormente. Com a ajuda disso, se alguém executar strings, não será capaz de ver nenhum comando no executável. Eles precisariam entender a matemática e definir um ponto de interrupção adequado no Debugger. 
 <br />
-A equação matemática da criptografia xor que fiz foi bem simples, a chave da criptação é o tamanho da string vezes 2 divido por 100, fazendo com que a chave seja a própria string desejada. se quiser saber mais sobre criptografica xor que fiz ![clica aqui](https://github.com/andreyquerino/CriptografiaXor).
+A equação matemática da criptografia xor que fiz foi bem simples, a chave da criptação é o tamanho da string vezes 2 divido por 100, fazendo com que a chave seja a própria string desejada. se quiser saber mais sobre criptografica xor que fiz ![clique aqui](https://github.com/andreyquerino/CriptografiaXor).
 
 ```c++
 void Decrypter(char CriptXor[]) {  
